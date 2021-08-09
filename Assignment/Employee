@@ -1,0 +1,7 @@
+create table app.employee (empid varchar(100),empnm varchar(100))
+
+insert into app.employee values('100','java');
+insert into app.employee values('101','python');
+insert into app.employee values('102','dotnet');
+
+select * from app.employee
