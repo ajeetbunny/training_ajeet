@@ -117,6 +117,7 @@ public class Store_Ajeet {
 						
 						InvoiceService.Invoicedb(quant,finalBill,products[index],reguser);
 						InvoiceService.Invoice_Display();
+						Bill_Ajeet.Invoice(quant,originalBill,finalBill,gst,z,products[index]);
 						
 					}
 					else

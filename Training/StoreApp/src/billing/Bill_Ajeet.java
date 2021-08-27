@@ -1,16 +1,7 @@
 package billing;
-import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintStream;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
 import java.util.Scanner;
-
-import payment.Payment_Ajeet;
-import store.Store_Ajeet;
 
 public class Bill_Ajeet {
 	public float calculateBill(float quantity,float price) {
@@ -24,10 +15,8 @@ public class Bill_Ajeet {
 	public float calculateGst(float amount,int gst) {		
 		return (amount*gst/100);
 	}
-public void Invoice(int b,float originalBill,float finalBill,int gst,float z, String productName){
+public static void Invoice(int b,float originalBill,float finalBill,int gst,float z, String productName){
 	Scanner sc=new Scanner(System.in);
-		 	
-		
 		try{
 			PrintStream f=new PrintStream("myInvoice.txt");
 			System.setOut(f);
