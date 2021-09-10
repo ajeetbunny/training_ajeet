@@ -28,3 +28,14 @@ h3{
     content:" *";
     color: red;
   }
+  
+#login {
+	background-color:#green;
+	padding:5px 30px;
+	color:white;
+}
+#display{
+	background-color:#skyblue;
+	padding:5px 30px;
+	color:white;
+}
