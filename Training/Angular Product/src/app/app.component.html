@@ -1,0 +1,124 @@
+<div class="container">
+  <div class="card mt-5" style="align-items:center;">
+    <h1>Product Dashboard</h1>
+  </div>
+  <div class="card mt-5" style="padding: 20px;">
+    <form #registerForm="ngForm" (ngSubmit)="addProduct(registerForm)">
+      <div class="form-group">
+        <label for="pname">Product Name: </label>
+        <input type="text" #pname (ngModel)="pname" name="pname" id="pname" class="form-control"
+          placeholder="Product Name">
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender </label>
+        <input type="text" #gender (ngModel)="gender" name="gender" id="gender" class="form-control"
+          placeholder="gender">
+      </div>
+      <div class="form-group">
+        <label for="brand">Brand Name: </label>
+        <input type="text" #brand (ngModel)="brand" name="brand" id="brand" class="form-control"
+          placeholder="Brand Name">
+      </div>
+      <div class="form-group">
+        <label for="category">Category: </label>
+        <input type="category" #category (ngModel)="category" name="category" id="category" class="form-control"
+          placeholder="category">
+      </div>
+
+      <div class="form-group">
+        <label for="quantity">Quantity: </label>
+        <input type="number" #quantity (ngModel)="quantity" name="quantity" id="quantity" class="form-control"
+          placeholder="Quantity">
+      </div>
+      <div class="form-group">
+        <label for="price">Price: </label>
+        <input type="number" #price (ngModel)="price" name="price" id="price" class="form-control"
+          placeholder="Enter the Price Of Product">
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Add Product" class="btn btn-primary w-100">
+      </div>
+    </form>
+  </div>
+  <div class="mt-5">
+    <table class="table table-bordered">
+      <thead class="thead">
+        <tr>
+          <th>Product Id </th>
+          <th>Product Name </th>
+          <th>Gender </th>
+          <th>Brand Name </th>
+          <th>Category </th>
+          <th>Quantity </th>
+          <th>Price </th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody class="tbody">
+        <tr *ngFor="let product of productDetails">
+          <td>{{product.id}}</td>
+          <td>{{product.name}}</td>
+          <td>{{product.gender}}</td>
+          <td>{{product.brand}}</td>
+          <td>{{product.category}}</td>
+          <td>{{product.quantity}}</td>
+          <td>{{product.price}}</td>
+          <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="edit(product)"> Edit</button></td>
+          <td><button type="button" class="btn btn-danger" (click)=deleteProduct(product)>Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Update Product Data</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form #updateForm="ngForm" (ngSubmit)="updateProduct()">
+          <div class="form-group">
+            
+            <label for="pname">Product Name: </label>
+            <input type="text" #pname [(ngModel)]="productToUpdate.name" name="pname" id="pname" class="form-control"
+              placeholder="Product Name">
+          </div>
+          <div class="form-group">
+            <label for="gender">Gender </label>
+            <input type="text" #gender [(ngModel)]="productToUpdate.gender" name="gender" id="gender" class="form-control"
+              placeholder="gender">
+          </div>
+          <div class="form-group">
+            <label for="brand">Brand Name: </label>
+            <input type="text" #brand [(ngModel)]="productToUpdate.brand" name="brand" id="brand" class="form-control"
+              placeholder="Brand Name">
+          </div>
+          <div class="form-group">
+            <label for="category">Category: </label>
+            <input type="category" #category [(ngModel)]="productToUpdate.category" name="category" id="category" class="form-control"
+              placeholder="category">
+          </div>
+    
+          <div class="form-group">
+            <label for="quantity">Quantity: </label>
+            <input type="number" #quantity [(ngModel)]="productToUpdate.quantity" name="quantity" id="quantity" class="form-control"
+              placeholder="Quantity">
+          </div>
+          <div class="form-group">
+            <label for="price">Price: </label>
+            <input type="number" #price [(ngModel)]="productToUpdate.price" name="price" id="price" class="form-control"
+              placeholder="Enter the Price Of Product">
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Update" class="btn btn-primary w-100">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
