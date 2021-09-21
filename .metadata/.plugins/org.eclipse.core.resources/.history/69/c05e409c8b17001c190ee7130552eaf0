@@ -1,0 +1,24 @@
+package com.store.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+@RestController
+public class UserController {
+
+@GetMapping({"/","/greet"})	
+ public String greet() {
+	 return "hello";
+ }
+@PostMapping("/checkuser")
+	public String checkuser(@RequestParam String unm, @RequestParam String pwd) {
+	        
+    if(unm.equalsIgnoreCase(pwd)) {
+       return "valid user";
+    }
+    return "Invalid user";       
+}
+ 
+}
+
