@@ -1,0 +1,27 @@
+package com.store;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+import com.store.model.Card;
+import com.store.model.User;
+
+@SpringBootApplication
+public class StoreApplication {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext context = SpringApplication.run(StoreApplication.class, args);  
+		User user = new User();
+		Card c = new Card();
+		c.setCardType("debit");
+		c.setLimit(100);
+		user.setUserCard(c);
+		
+		
+		User userData=context.getBean(User.class);
+		System.out.println(userData.getUserCard().getCardType() + "--" + userData.getUserCard().getLimit());
+	}
+
+}

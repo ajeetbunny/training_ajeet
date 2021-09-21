@@ -1,0 +1,27 @@
+package com.store.model;
+
+public class Card {
+	private String userId;
+	private String cardtype;
+	private int balance;
+	
+	public String getUserid() {
+		return userId;
+	}
+	public void setUserid(String userid) {
+		this.userId = userId;
+	}
+	public String getCardtype() {
+		return cardtype;
+	}
+	public void setCardtype(String cardtype) {
+		this.cardtype = cardtype;
+	}
+	public int getBalance() {
+		return balance;
+	}
+	public void setBalance(int balance) {
+		this.balance = balance;
+	}
+
+}

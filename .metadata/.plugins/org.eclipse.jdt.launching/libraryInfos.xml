@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+<libraryInfo home="C:\Program Files\Java\jdk1.8.0_202" version="1.8.0_202">
+<bootpath>
+<entry path="C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar"/>
+<entry path="C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar"/>
+<entry path="C:\Program Files\Java\jdk1.8.0_202\jre\lib\sunrsasign.jar"/>
+<entry path="C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar"/>
+<entry path="C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar"/>
+<entry path="C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar"/>
+<entry path="C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar"/>
+<entry path="C:\Program Files\Java\jdk1.8.0_202\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files\Java\jdk1.8.0_202\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Users\HP\Desktop\JAVA DEST" version="1.8.0_301">
+<bootpath>
+<entry path="C:\Users\HP\Desktop\JAVA DEST\lib\resources.jar"/>
+<entry path="C:\Users\HP\Desktop\JAVA DEST\lib\rt.jar"/>
+<entry path="C:\Users\HP\Desktop\JAVA DEST\lib\sunrsasign.jar"/>
+<entry path="C:\Users\HP\Desktop\JAVA DEST\lib\jsse.jar"/>
+<entry path="C:\Users\HP\Desktop\JAVA DEST\lib\jce.jar"/>
+<entry path="C:\Users\HP\Desktop\JAVA DEST\lib\charsets.jar"/>
+<entry path="C:\Users\HP\Desktop\JAVA DEST\lib\jfr.jar"/>
+<entry path="C:\Users\HP\Desktop\JAVA DEST\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Users\HP\Desktop\JAVA DEST\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Users\HP\Desktop\JAVA DEST\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+</libraryInfos>

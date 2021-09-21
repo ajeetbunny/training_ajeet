@@ -1,0 +1,4 @@
+spring.datasource.driver-class-name=org.apache.derby.jdbc.ClientDriver
+spring.datasource.username=derby
+spring.datasource.password=derby
+spring.datasource.url=jdbc:derby://localhost:1527/MyTestDb;create=true
