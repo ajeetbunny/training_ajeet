@@ -1,0 +1,41 @@
+@charset "ISO-8859-1";
+body{
+	text-align:center;
+}
+h1{
+	color:blue;
+}
+h3{
+	
+}
+.required:before{
+    content:" *";
+    color: red;
+  }
+
+#addbtn {
+	background-color:#2dabf9;
+	padding:5px 30px;
+	color:white;
+}
+#reset{
+	background-color:red;
+	padding:5px 30px;
+	color:white;
+	
+}
+.uname:after {
+    content:" *";
+    color: red;
+  }
+  
+#login {
+	background-color:#green;
+	padding:5px 30px;
+	color:white;
+}
+#display{
+	background-color:#skyblue;
+	padding:5px 30px;
+	color:white;
+}
